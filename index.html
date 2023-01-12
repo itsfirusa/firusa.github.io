@@ -3,13 +3,13 @@
     <title>Mobile Ready Screen-Set Implementation Example</title>
     <meta name = "viewport" content = "width-device-width">
     <SCRIPT type = "text/javascript" lang = "javascript"
-        src = "https://cdns.gigya.com/js/gigya.js?apikey=4_uT-ZdEcFR-esjqK7GRusdA">
+        src = "https://cdn.gigya.com/js/gigya.js?apikey=4_uT-ZdEcFR-esjqK7GRusdA">
     </SCRIPT>
   </head>
   <body>
     <a href = "#"
                  onclick = "gigya.accounts.showScreenSet({screenSet:'Default-LiteRegistration'});"> Subscribe Here! </a> &nbsp;&nbsp;|&nbsp;&nbsp;
-    <a href = "#" onclick = "gigya.accounts.showScreenSet({screenSet:'Default-RegistrationLogin', startScreen:'gigya-register-screen'});"> Register </a>&nbsp;&nbsp|&nbsp;&nbsp;
+    <a href = "#" onclick = "gigya.accounts.showScreenSet({screenSet:'Default-RegistrationLogin', startScreen:'gigya-register-screen'});"> Register </a> &nbsp;&nbsp;|&nbsp;&nbsp;
     <a href = "#" onclick = "gigya.accounts.showScreenSet({screenSet:'Default-RegistrationLogin'});"> Login </a>
     
     <span id = "logout" hidden>
@@ -41,7 +41,7 @@
       
       //traps the login event to show the logout link
       gigya.socialize.addEventHandlers({
-        onLogin:function() {
+        onLogin: function() {
           document.getelementById("logout").hidden=false;
         }
       });
